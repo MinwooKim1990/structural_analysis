@@ -31,14 +31,14 @@ An advanced structural engineering analysis tool that leverages Graph Neural Net
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/structural-analysis.git
-cd structural-analysis
+git clone https://github.com/MinwooKim1990/structural_analysis.git
+cd structural_analysis
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Set up environment variables
-cp .env.example .env
+cp .env
 # Edit .env and add your OPENAI_API_KEY
 ```
 
