@@ -1,0 +1,592 @@
+{
+    "metadata": {
+        "structure_id": "TUM_demo_2bay_4story",
+        "title": "2-Bay 4-Story Steel Moment Frame",
+        "units": {
+            "length": "meter",
+            "force": "kilonewton",
+            "displacement": "millimeter"
+        },
+        "description": "GNN surrogate response for a braced 2-bay, 4-story academic building frame. The frame resists typhoon-level lateral pressure from west to east while carrying typical gravity floor loads."
+    },
+    "nodes": [
+        {
+            "id": "N1",
+            "label": "Level 0 - Column A Base",
+            "position": [0.0, 0.0, 0.0],
+            "supports": ["fixed"],
+            "loads": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 0.1, "uy": -0.02, "uz": 0.0},
+                "reaction_kN": {"Fx": -95.0, "Fy": 1450.0, "Fz": 0.0},
+                "utilization": 0.42
+            }
+        },
+        {
+            "id": "N2",
+            "label": "Level 0 - Column B Base",
+            "position": [6.0, 0.0, 0.0],
+            "supports": ["pinned"],
+            "loads": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 0.3, "uy": -0.04, "uz": 0.0},
+                "reaction_kN": {"Fx": -90.0, "Fy": 1250.0, "Fz": 0.0},
+                "utilization": 0.37
+            }
+        },
+        {
+            "id": "N3",
+            "label": "Level 0 - Column C Base",
+            "position": [12.0, 0.0, 0.0],
+            "supports": ["fixed"],
+            "loads": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 0.12, "uy": -0.03, "uz": 0.0},
+                "reaction_kN": {"Fx": -85.0, "Fy": 1225.0, "Fz": 0.0},
+                "utilization": 0.4
+            }
+        },
+        {
+            "id": "N4",
+            "label": "Level 1 - Column A",
+            "position": [0.0, 4.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -320.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 4.2, "uy": -2.0, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.55
+            }
+        },
+        {
+            "id": "N5",
+            "label": "Level 1 - Column B",
+            "position": [6.0, 4.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 45.0, "Fy": -300.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 6.8, "uy": -2.5, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.62
+            }
+        },
+        {
+            "id": "N6",
+            "label": "Level 1 - Column C",
+            "position": [12.0, 4.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -320.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 4.5, "uy": -2.1, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.57
+            }
+        },
+        {
+            "id": "N7",
+            "label": "Level 2 - Column A",
+            "position": [0.0, 8.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -330.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 10.5, "uy": -4.1, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.66
+            }
+        },
+        {
+            "id": "N8",
+            "label": "Level 2 - Column B",
+            "position": [6.0, 8.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 60.0, "Fy": -305.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 15.2, "uy": -4.6, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.71
+            }
+        },
+        {
+            "id": "N9",
+            "label": "Level 2 - Column C",
+            "position": [12.0, 8.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -330.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 11.0, "uy": -4.2, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.64
+            }
+        },
+        {
+            "id": "N10",
+            "label": "Level 3 - Column A",
+            "position": [0.0, 12.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -340.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 18.4, "uy": -6.1, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.73
+            }
+        },
+        {
+            "id": "N11",
+            "label": "Level 3 - Column B",
+            "position": [6.0, 12.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 75.0, "Fy": -310.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 25.9, "uy": -6.7, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.81
+            }
+        },
+        {
+            "id": "N12",
+            "label": "Level 3 - Column C",
+            "position": [12.0, 12.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -340.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 19.1, "uy": -6.2, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.75
+            }
+        },
+        {
+            "id": "N13",
+            "label": "Roof - Column A",
+            "position": [0.0, 16.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -350.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 27.5, "uy": -7.9, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.78
+            }
+        },
+        {
+            "id": "N14",
+            "label": "Roof - Column B",
+            "position": [6.0, 16.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 90.0, "Fy": -320.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 36.8, "uy": -8.4, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.92
+            }
+        },
+        {
+            "id": "N15",
+            "label": "Roof - Column C",
+            "position": [12.0, 16.0, 0.0],
+            "supports": [],
+            "loads": {"Fx": 0.0, "Fy": -360.0, "Fz": 0.0},
+            "predictions": {
+                "displacement_mm": {"ux": 28.4, "uy": -8.0, "uz": 0.0},
+                "reaction_kN": {"Fx": 0.0, "Fy": 0.0, "Fz": 0.0},
+                "utilization": 0.8
+            }
+        }
+    ],
+    "elements": [
+        {
+            "id": "E1",
+            "type": "column",
+            "label": "Column A - Story 1",
+            "nodes": ["N1", "N4"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -950.0,
+                "shear_force_kN": 35.0,
+                "bending_moment_kNm": 210.0,
+                "stress_ratio": 0.65
+            }
+        },
+        {
+            "id": "E2",
+            "type": "column",
+            "label": "Column A - Story 2",
+            "nodes": ["N4", "N7"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -720.0,
+                "shear_force_kN": 45.0,
+                "bending_moment_kNm": 260.0,
+                "stress_ratio": 0.73
+            }
+        },
+        {
+            "id": "E3",
+            "type": "column",
+            "label": "Column A - Story 3",
+            "nodes": ["N7", "N10"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -480.0,
+                "shear_force_kN": 58.0,
+                "bending_moment_kNm": 290.0,
+                "stress_ratio": 0.81
+            }
+        },
+        {
+            "id": "E4",
+            "type": "column",
+            "label": "Column A - Story 4",
+            "nodes": ["N10", "N13"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -250.0,
+                "shear_force_kN": 72.0,
+                "bending_moment_kNm": 320.0,
+                "stress_ratio": 0.88
+            }
+        },
+        {
+            "id": "E5",
+            "type": "column",
+            "label": "Column B - Story 1",
+            "nodes": ["N2", "N5"],
+            "section": "HEB 320",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -870.0,
+                "shear_force_kN": 42.0,
+                "bending_moment_kNm": 235.0,
+                "stress_ratio": 0.69
+            }
+        },
+        {
+            "id": "E6",
+            "type": "column",
+            "label": "Column B - Story 2",
+            "nodes": ["N5", "N8"],
+            "section": "HEB 320",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -610.0,
+                "shear_force_kN": 55.0,
+                "bending_moment_kNm": 280.0,
+                "stress_ratio": 0.79
+            }
+        },
+        {
+            "id": "E7",
+            "type": "column",
+            "label": "Column B - Story 3",
+            "nodes": ["N8", "N11"],
+            "section": "HEB 320",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -390.0,
+                "shear_force_kN": 68.0,
+                "bending_moment_kNm": 335.0,
+                "stress_ratio": 0.92
+            }
+        },
+        {
+            "id": "E8",
+            "type": "column",
+            "label": "Column B - Story 4",
+            "nodes": ["N11", "N14"],
+            "section": "HEB 320",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -220.0,
+                "shear_force_kN": 82.0,
+                "bending_moment_kNm": 360.0,
+                "stress_ratio": 0.96
+            }
+        },
+        {
+            "id": "E9",
+            "type": "column",
+            "label": "Column C - Story 1",
+            "nodes": ["N3", "N6"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -930.0,
+                "shear_force_kN": 37.0,
+                "bending_moment_kNm": 205.0,
+                "stress_ratio": 0.63
+            }
+        },
+        {
+            "id": "E10",
+            "type": "column",
+            "label": "Column C - Story 2",
+            "nodes": ["N6", "N9"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -700.0,
+                "shear_force_kN": 48.0,
+                "bending_moment_kNm": 255.0,
+                "stress_ratio": 0.75
+            }
+        },
+        {
+            "id": "E11",
+            "type": "column",
+            "label": "Column C - Story 3",
+            "nodes": ["N9", "N12"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -470.0,
+                "shear_force_kN": 60.0,
+                "bending_moment_kNm": 295.0,
+                "stress_ratio": 0.82
+            }
+        },
+        {
+            "id": "E12",
+            "type": "column",
+            "label": "Column C - Story 4",
+            "nodes": ["N12", "N15"],
+            "section": "HEB 300",
+            "material": "S355",
+            "length_m": 4.0,
+            "predictions": {
+                "axial_force_kN": -260.0,
+                "shear_force_kN": 74.0,
+                "bending_moment_kNm": 325.0,
+                "stress_ratio": 0.9
+            }
+        },
+        {
+            "id": "E13",
+            "type": "beam",
+            "label": "Level 1 - Beam AB",
+            "nodes": ["N4", "N5"],
+            "section": "IPE 330",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 45.0,
+                "shear_force_kN": 185.0,
+                "bending_moment_kNm": 140.0,
+                "stress_ratio": 0.72
+            }
+        },
+        {
+            "id": "E14",
+            "type": "beam",
+            "label": "Level 1 - Beam BC",
+            "nodes": ["N5", "N6"],
+            "section": "IPE 330",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 38.0,
+                "shear_force_kN": 190.0,
+                "bending_moment_kNm": 148.0,
+                "stress_ratio": 0.74
+            }
+        },
+        {
+            "id": "E15",
+            "type": "beam",
+            "label": "Level 2 - Beam AB",
+            "nodes": ["N7", "N8"],
+            "section": "IPE 330",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 52.0,
+                "shear_force_kN": 200.0,
+                "bending_moment_kNm": 160.0,
+                "stress_ratio": 0.78
+            }
+        },
+        {
+            "id": "E16",
+            "type": "beam",
+            "label": "Level 2 - Beam BC",
+            "nodes": ["N8", "N9"],
+            "section": "IPE 330",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 46.0,
+                "shear_force_kN": 205.0,
+                "bending_moment_kNm": 168.0,
+                "stress_ratio": 0.8
+            }
+        },
+        {
+            "id": "E17",
+            "type": "beam",
+            "label": "Level 3 - Beam AB",
+            "nodes": ["N10", "N11"],
+            "section": "IPE 360",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 58.0,
+                "shear_force_kN": 215.0,
+                "bending_moment_kNm": 182.0,
+                "stress_ratio": 0.84
+            }
+        },
+        {
+            "id": "E18",
+            "type": "beam",
+            "label": "Level 3 - Beam BC",
+            "nodes": ["N11", "N12"],
+            "section": "IPE 360",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 50.0,
+                "shear_force_kN": 220.0,
+                "bending_moment_kNm": 190.0,
+                "stress_ratio": 0.86
+            }
+        },
+        {
+            "id": "E19",
+            "type": "beam",
+            "label": "Roof - Beam AB",
+            "nodes": ["N13", "N14"],
+            "section": "IPE 360",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 62.0,
+                "shear_force_kN": 230.0,
+                "bending_moment_kNm": 205.0,
+                "stress_ratio": 0.9
+            }
+        },
+        {
+            "id": "E20",
+            "type": "beam",
+            "label": "Roof - Beam BC",
+            "nodes": ["N14", "N15"],
+            "section": "IPE 360",
+            "material": "S355",
+            "length_m": 6.0,
+            "predictions": {
+                "axial_force_kN": 55.0,
+                "shear_force_kN": 235.0,
+                "bending_moment_kNm": 212.0,
+                "stress_ratio": 0.91
+            }
+        },
+        {
+            "id": "E21",
+            "type": "brace",
+            "label": "Brace A1-B2",
+            "nodes": ["N4", "N8"],
+            "section": "Tube 200x10",
+            "material": "S355",
+            "length_m": 7.2,
+            "predictions": {
+                "axial_force_kN": -180.0,
+                "buckling_utilization": 0.67,
+                "stress_ratio": 0.67
+            }
+        },
+        {
+            "id": "E22",
+            "type": "brace",
+            "label": "Brace A2-B3",
+            "nodes": ["N7", "N11"],
+            "section": "Tube 200x10",
+            "material": "S355",
+            "length_m": 7.2,
+            "predictions": {
+                "axial_force_kN": -215.0,
+                "buckling_utilization": 0.75,
+                "stress_ratio": 0.75
+            }
+        },
+        {
+            "id": "E23",
+            "type": "brace",
+            "label": "Brace A3-BRoof",
+            "nodes": ["N10", "N14"],
+            "section": "Tube 200x12",
+            "material": "S355",
+            "length_m": 7.2,
+            "predictions": {
+                "axial_force_kN": -240.0,
+                "buckling_utilization": 0.82,
+                "stress_ratio": 0.82
+            }
+        },
+        {
+            "id": "E24",
+            "type": "brace",
+            "label": "Brace B1-C2",
+            "nodes": ["N5", "N9"],
+            "section": "Tube 180x8",
+            "material": "S355",
+            "length_m": 7.2,
+            "predictions": {
+                "axial_force_kN": 140.0,
+                "buckling_utilization": 0.61,
+                "stress_ratio": 0.61
+            }
+        },
+        {
+            "id": "E25",
+            "type": "brace",
+            "label": "Brace B2-C3",
+            "nodes": ["N8", "N12"],
+            "section": "Tube 180x8",
+            "material": "S355",
+            "length_m": 7.2,
+            "predictions": {
+                "axial_force_kN": 165.0,
+                "buckling_utilization": 0.7,
+                "stress_ratio": 0.7
+            }
+        },
+        {
+            "id": "E26",
+            "type": "brace",
+            "label": "Brace B3-CRoof",
+            "nodes": ["N11", "N15"],
+            "section": "Tube 180x8",
+            "material": "S355",
+            "length_m": 7.2,
+            "predictions": {
+                "axial_force_kN": 190.0,
+                "buckling_utilization": 0.76,
+                "stress_ratio": 0.76
+            }
+        }
+    ],
+    "global_predictions": {
+        "total_vertical_load_kN": 3925.0,
+        "total_horizontal_load_kN": 270.0,
+        "predicted_roof_drift_mm": 33.5,
+        "predicted_story_drift_ratio": 0.0085,
+        "fundamental_frequency_Hz": 1.85,
+        "base_shear_distribution_kN": {
+            "N1": 95.0,
+            "N2": 90.0,
+            "N3": 85.0
+        }
+    }
+}
